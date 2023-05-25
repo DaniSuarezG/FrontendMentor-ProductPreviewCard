@@ -30,7 +30,6 @@ body {
 }
 
 #container img {
-  /* object-fit: scale-down; */
   width: 300px;
   border-radius: 5% 0 0 5%;
 }
@@ -39,28 +38,70 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 30px
+}
+
+.caption {
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: .3rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.title {
+  font-size: 33px;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%)
 }
 
 .prices {
   display: flex;
+  align-items: center;
+  margin: 20px 0;
 }
 
-.price,
+.price {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  color: #3d8168;
+}
+
 .discount {
-  width: 50%;
+  text-align: center;
+  font-size: 13px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin-left: 20px;
 }
 
 button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
+  background-color: #3d8168;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-button img {
-  object-fit: scale-down;
+button:hover {
+  background-color: #1a4031;
+  transition: .5s;
+}
+
+button svg {
+  padding-right: 10px;
 }
 
 footer {
